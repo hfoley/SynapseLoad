@@ -3,6 +3,7 @@ We were trying to tackle getting a large copy of SQL Server databases into Azure
 	
 The data in parquet files will then be loaded into a Synapse Analytics solution diagrammed below.  
 
+![alt text](https://github.com/hfoley/EDU/blob/master/images/SynapseLoadArchitecture.png?raw=true)
 
 ## Asset List 
 	1. Azure Resource Group
