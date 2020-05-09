@@ -1,10 +1,10 @@
-## Synapse Load Solution 
+# Synapse Load Solution 
 We were trying to tackle getting a large copy of SQL Server databases into Azure in a PaaS solution for analytics.  The first piece is to copy data from on-premises large SQL Servers to Azure Data Lake Gen 2.  We use Azure Data Factory for the data extracts and the loads.  We build reusable metadata driven pipelines utilzing data stored in a small Azure SQL Database.  
 	
 The data in parquet files will then be loaded into a Synapse Analytics solution diagrammed below.  
 
 
-#Asset List 
+## Asset List 
 	1. Azure Resource Group
 	2. Azure SQL Database - metadata table location 
 	3. Azure Data Lake Gen 2 - location to land extracted parquet files 
@@ -17,7 +17,7 @@ AzureSQLScripts - contains SQL Scripts to create and load the Azure SQL metadata
 
 CreateResources - contains PowerShell scripts to build all the Azure components in the solution. 
 
-##Steps
+## Steps
 	1. Create all assets.  If you'd like to create the Azure components you can use scripts in CreateResources 
 	2. Create target tables and if incremental loads the staging table 
 	3. Connect to Azure SQL DB and run scripts in order.  These scripts will create ADF.MetadataLoad schema, table, and an insert script to load the table that will drive the pipelines 
