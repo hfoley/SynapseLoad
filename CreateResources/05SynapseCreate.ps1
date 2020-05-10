@@ -1,26 +1,23 @@
 ﻿<# Update the variables section appropriately for your environment.  
 Update any reference to ***Change This*** in the variables
 You will get prompted at first to login with your account to Azure.  
-You will get a second prompt that will create your SQL Admin account/password. 
-IMPORTANT - use all lowercase on $azsqlserver logical server name due to potential bug (4/7/20) #>
+You will get a second prompt that will create your SQL Admin account/password 
+IMPORTANT - use all lowercase for now on SQL Server logical name 4/6/20 #>
 $startTime = Get-Date
 $SubscriptionName = "***Change This***" 
 $SubscriptionId = '***Change This***'
 $resourceGroupName = "***Change This***"
 $resourceGroupLocation = "***Change This***" 
 $azsqlserver = "***Change This***"
-$azsqlDB = "***Change This***"
+$azsynapsename = "***Change This***"
 $edition = "***Change This***"
-$ComputeModel = "***Change This***" 
-$ComputeGen = "***Change This***"
-$mincore = "***Change This***"
-$maxcore = "***Change This***"
-$pausemin = "***Change This***"
+$synapselvl = "***Change This***" 
+
 
 Connect-AzAccount
 Select-AzSubscription -SubscriptionName $SubscriptionName
 
-Write-Host "The Azure SQL Server and DB creation script was started " $startTime
+Write-Host "The Azure Synapse Server and DB creation script was started " $startTime
 
 $SQLServerCheck = Get-AzSqlServer -ResourceGroupName $resourceGroupName -ServerName $azsqlserver -ErrorAction SilentlyContinue
 if(-not $SQLServerCheck)
@@ -32,18 +29,14 @@ else
     {Write-Host "SQL Server '$azsqlserver' already created"}
 
 
-$SQLDBCheck = Get-AzSqlDatabase -ResourceGroupName $resourceGroupName -ServerName $azsqlserver -DatabaseName $azsqlDB -ErrorAction SilentlyContinue
-if(-not $SQLDBCheck)
+$SQLSynapseCheck = Get-AzSqlDatabase -ResourceGroupName $resourceGroupName -ServerName $azsqlserver -DatabaseName $azsynapsename -ErrorAction SilentlyContinue
+if(-not $SQLSynapseCheck)
     {
-    Write-Host "SQL DB '$azsqlDB' doesn't exist and will be created"
-    New-AzSqlDatabase -ResourceGroupName $resourceGroupName  -ServerName $azsqlserver -DatabaseName $azsqlDB -ComputeModel $ComputeModel -Edition $edition -ComputeGeneration $ComputeGen `
-    -MinVcore $mincore -MaxVcore $maxcore -AutoPauseDelayInMinutes $pausemin
-
+    Write-Host "Synapse DB '$azsynapsename' doesn't exist and will be created"
+    New-AzSqlDatabase -ResourceGroupName $resourceGroupName  -ServerName $azsqlserver -DatabaseName $azsynapsename -Edition $edition -RequestedServiceObjectiveName $synapselvl  
     }
 else 
-    {Write-Host "SQL DB '$azsqlDB' already created"}
+    {Write-Host "Synapse DB '$azsynapsename' already created"}
 
 $endTime = Get-Date
-write-host "Ended SQL Server and DB creation at " $endTime
-
-
+write-host "Ended Azure Synapse Server and DB creation script was started " $endTime
