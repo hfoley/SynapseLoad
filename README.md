@@ -18,7 +18,7 @@ The data in parquet files will then be loaded into a Synapse Analytics solution 
  
 
 ## Steps
-1. Create all assets.  If you'd like to create the Azure components you can use scripts in CreateResources.   Open each file and edit the variables section at the top.  You can do a search/replace for the text string "***Change This***".  Run them individually starting at 01ResourceGroupCreate.ps1 and run them in order by naming. 
+1. Create all assets.  If you'd like to create the Azure components you can use scripts in CreateResources.   Open each file and edit the variables section at the top.  You can do a search/replace for the text string '***Change This***'.  Run them individually starting at 01ResourceGroupCreate.ps1 and run them in order by naming. 
 2. Create target tables and if incremental loads the staging table 
 3. Connect to Azure SQL DB and run scripts in order.  These scripts will create ADF.MetadataLoad schema, table, and an insert script to load the table that will drive the pipelines 
 4. Update json files for your environment 
