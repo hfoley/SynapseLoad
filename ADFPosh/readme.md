@@ -24,4 +24,6 @@ The components in this folder are to create the items in Azure Data Factory (ADF
 	1. ADLSGen2LinkedService.json - You will need to update the URL path.  You can get this in the Azure Portal in the Properties pane.  Use the Data Lake Storage endpoint.  It will looks something like `https://<storage account name>.dfs.core.windows.net.`  
 	2. AzureSQLDBLinkedService.json - You will need to change the connection string portion in this file.  You can get the servername in the Azure Portal Overview section.  It will be something like `https://<db name>.database.windows.net.`
 	3. SynapseLinkedService.json - You will need to change the connection string portion.  There are 3 changes needed.  You need to change the logical servername, the Synapse database name, and the SQL Authenticated user to connect.  The details of the change are `data source=<logical servername>.database.windows.net;initial catalog=<synapse db name>;user id=<user account>"`
-
+4. If you need to create a self hosted IR - you can use the scripts 01ADF-CreateIR.ps1 and 02ADF-SetIR.ps1 to create them.  Or you can do this in the portal and is documented here https://docs.microsoft.com/en-us/azure/data-factory/create-self-hosted-integration-runtime
+5. If self hosted IR is not needed start with script 03ADF-AzureSQLDBLinkedServerCreate.ps1.  Run this script and validate in ADF the linked services are created. 
+6. 
