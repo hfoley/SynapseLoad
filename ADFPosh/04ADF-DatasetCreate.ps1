@@ -3,7 +3,7 @@ Update any reference to ***Change This*** in the variables #>
 $SubscriptionName = "***Change This***" 
 $ResourceGroupName = "***Change This***" 
 $DataFactoryLocation = "***Change This***" 
-$ScriptLoc = '***Change This***'
+$ScriptLoc = "***Change This***"
 $DataFactoryName = "***Change This***" 
 $DatasetName1 = "LookupMetadataLoad"
 $DatasetFile1 = ".\DatasetSQLMetadataLoad.json"

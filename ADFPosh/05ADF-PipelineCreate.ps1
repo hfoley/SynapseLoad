@@ -3,7 +3,7 @@ Update any reference to ***Change This*** in the variables #>
 $SubscriptionName = "***Change This***" 
 $ResourceGroupName = "***Change This***" 
 $DataFactoryLocation = "***Change This***" 
-$ScriptLoc = '***Change This***'
+$ScriptLoc = "***Change This***"
 $DataFactoryName = "***Change This***" 
 $PipelineName1 = "Synapse Incremental Load"
 $PipelineFile1 = ".\IncrementalPipelineCreate.json"
