@@ -11,10 +11,10 @@ The data in parquet files will then be loaded into a Synapse Analytics solution 
 	3. Azure Data Lake Gen 2 - location to land extracted parquet files 
 	4. Azure Data Factory - pipelines to extract data 
 	5. Azure Synapse - destination to load parquet extracted files 
-	
-* [ADFPosh](https://github.com/hfoley/SynapseLoad/tree/master/ADFPosh)  - contains PowerShell scripts to build the ADF coponents and pipelines 
-* [AzureSQLScripts](https://github.com/hfoley/SynapseLoad/tree/master/AzureSQLScripts)   - contains SQL Scripts to create and load the Azure SQL metadata table.  Also contains some sample scripts and scripts to monitor the load process.  
+
 * [CreateResources](https://github.com/hfoley/SynapseLoad/tree/master/CreateResources)   - contains PowerShell scripts to build all the Azure components in the solution. 
+* [AzureSQLScripts](https://github.com/hfoley/SynapseLoad/tree/master/AzureSQLScripts)   - contains SQL Scripts to create and load the Azure SQL metadata table.  Also contains some sample scripts and scripts to monitor the load process.  
+* [ADFPosh](https://github.com/hfoley/SynapseLoad/tree/master/ADFPosh)  - contains PowerShell scripts to build the ADF coponents and pipelines 
  
 
 ## Steps
