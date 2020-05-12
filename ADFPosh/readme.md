@@ -1,5 +1,5 @@
  # Synapse Load Solution - Azure Data Factory
-The components in this folder are to create the items in Azure Data Factory (ADF).  There are a combination of PowerShell scripts and json files needed to create all the things needed in ADF.  You will need to make some updates to all the files.  
+The components in this folder are to create the items in Azure Data Factory (ADF).  There are a combination of PowerShell scripts and json files needed to create all the things needed in ADF.  You will need to make some updates to all the files.  Anything that needs updated in either the PowerShell script or corresponding json file will have the text string `"***Change This***"`.  You can do a find/replace on all files for that specific text to make it easier to find.  
 	
 
 ## File List 
