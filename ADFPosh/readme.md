@@ -23,4 +23,5 @@ The components in this folder are to create the items in Azure Data Factory (ADF
 3. Update the json files above with details for your environment.  Specifics to each file are below
 	1. ADLSGen2LinkedService.json - You will need to update the URL path.  You can get this in the Azure Portal in the Properties pane.  Use the Data Lake Storage endpoint.  It will looks something like `https://<storage account name>.dfs.core.windows.net.`  
 	2. AzureSQLDBLinkedService.json - You will need to change the connection string portion in this file.  You can get the servername in the Azure Portal Overview section.  It will be something like `https://<db name>.database.windows.net.`
+	3. SynapseLinkedService.json - You will need to change the connection string portion.  There are 3 changes needed.  You need to change the logical servername, the Synapse database name, and the SQL Authenticated user to connect.  The details of the change are `data source=<logical servername>.database.windows.net;initial catalog=<synapse db name>;user id=<user account>"`
 
