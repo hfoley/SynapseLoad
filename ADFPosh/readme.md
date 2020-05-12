@@ -8,4 +8,12 @@ The components in this folder are to create the items in Azure Data Factory (ADF
 	3. 03ADF-AzureSQLDBLinkedServerCreate.ps1 - script to create the linked servers in ADF 
 	4. 04ADF-DatasetCreate.ps1
 	5. 05ADF-PipelineCreate.ps1
+	6. ADLSGen2LinkedService.json
+	7. AzureSQLDBLinkedService.json
+	8. DatasetSinkSynapse.json
+	9. DatasetSQLMetadataLoad.json
+	10. DatasetSrcADLSFileLoad.json
+	11. IncrementalPipelineCreate.json
+	12. SynapseLinkedService.json
+	13. Truncate Load Synapse.json
 
