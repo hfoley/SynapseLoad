@@ -17,4 +17,7 @@ The components in this folder are to create the items in Azure Data Factory (ADF
 12. IncrementalPipelineCreate.json - Json file tied to the creation of the incremental pipeline in ADF 
 13. Truncate Load Synapse.json - Json file tied to the creation of the truncate/reload pipeline in ADF 
 	
+## Steps
+1. Copy the files to a directory locally. 
+2. Update the files in bold above for your environment.  PowerShell scripts will have variables at the 
 
