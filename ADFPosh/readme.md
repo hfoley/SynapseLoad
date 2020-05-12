@@ -8,9 +8,9 @@ The components in this folder are to create the items in Azure Data Factory (ADF
 	3. 03ADF-AzureSQLDBLinkedServerCreate.ps1 - Script to create the linked servers in ADF 
 	4. 04ADF-DatasetCreate.ps1 - Script to create the datasets in ADF 
 	5. 05ADF-PipelineCreate.ps1 - Scripts to create the pipelines in ADF 
-	6. -ADLSGen2LinkedService.json - Json file tied to the creation of the linked server pointing to ADLS Gen 2 in ADF
-	7. -AzureSQLDBLinkedService.json - Json file tied to the creation of the linked server pointing to SQL DB in ADF
-	8. -SynapseLinkedService.json - Json file tied to the creation of the linked server pointing to Synapse in ADF
+:exclamation:	6. -ADLSGen2LinkedService.json - Json file tied to the creation of the linked server pointing to ADLS Gen 2 in ADF
+:exclamation:	7. -AzureSQLDBLinkedService.json - Json file tied to the creation of the linked server pointing to SQL DB in ADF
+:exclamation:	8. -SynapseLinkedService.json - Json file tied to the creation of the linked server pointing to Synapse in ADF
 	9. DatasetSinkSynapse.json - Json file tied to the creation of the sink dataset in ADF pointing to Synapse destination
 	10. DatasetSQLMetadataLoad.json - Json file tied to the creation of dataset in ADF pointing to Azure SQL metadata table 
 	11. DatasetSrcADLSFileLoad.json - Json file tied to the creation of the source dataset in ADF pointing to ADLS Gen 2 parquet files
