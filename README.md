@@ -1,5 +1,5 @@
 # Synapse Load Solution 
-We were trying to tackle getting a large copy of SQL Server databases into Azure in a PaaS solution for analytics.  The first piece is to copy data from on-premises large SQL Servers to Azure Data Lake Gen 2.  We use Azure Data Factory for the data extracts and the loads.  We build reusable metadata driven pipelines utilzing data stored in a small Azure SQL Database.  
+I had a few customers who were attempting to tackle similar challenges so I decided to help automate the solution we implemented.  We were trying to tackle getting a copy of a large SQL Server database with potentially 1000s of tables into Azure in a PaaS solution for analytics.  Instead of building and maintaining 1000s of pipelines, we built 2 pipelines to handle a couple patterns of loading.  An easily updateable table in an Azure SQL Database houses the data that the pipelines use to run.  
 	
 The data in parquet files will then be loaded into a Synapse Analytics solution diagrammed below.  
 
@@ -15,7 +15,8 @@ The data in parquet files will then be loaded into a Synapse Analytics solution 
 * [CreateResources](https://github.com/hfoley/SynapseLoad/tree/master/CreateResources)   - contains PowerShell scripts to build all the Azure components in the solution. 
 * [AzureSQLScripts](https://github.com/hfoley/SynapseLoad/tree/master/AzureSQLScripts)   - contains SQL Scripts to create and load the Azure SQL metadata table.  Also contains some sample scripts and scripts to monitor the load process.  
 * [ADFPosh](https://github.com/hfoley/SynapseLoad/tree/master/ADFPosh)  - contains PowerShell scripts to build the ADF coponents and pipelines 
- 
+
+Each sub-directory has additional readme files with further details but the high level steps are below.  
 
 ## Steps
 1. Create all assets.  If you'd like to create the Azure components you can use scripts in CreateResources.   Open each file and edit the variables section at the top.  You can do a search/replace for the text string `"***Change This***"`.  Run them individually starting at 01ResourceGroupCreate.ps1 and run them in order by naming. 
