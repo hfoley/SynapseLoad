@@ -19,5 +19,8 @@ The components in this folder are to create the items in Azure Data Factory (ADF
 	
 ## Steps
 1. Copy the files to a directory locally. 
-2. Update the files in bold above for your environment.  PowerShell scripts will have variables at the 
+2. Update the PowerShell scripts in bold above for your environment.  PowerShell scripts will have variables at the top of the script. 
+3. Update the json files above with details for your environment.  Specifics to each file are below
+	1. ADLSGen2LinkedService.json - You will need to update the URL path.  You can get this in the Azure Portal in the Properties pane.  Use the Data Lake Storage endpoint.  It will looks something like https://<storage account name>.dfs.core.windows.net.  
+	2. 
 
