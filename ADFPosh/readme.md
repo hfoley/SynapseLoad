@@ -27,3 +27,5 @@ The components in this folder are to create the items in Azure Data Factory (ADF
 4. If you need to create a self hosted IR - you can use the scripts 01ADF-CreateIR.ps1 and 02ADF-SetIR.ps1 to create them.  Or you can do this in the portal and is documented here https://docs.microsoft.com/en-us/azure/data-factory/create-self-hosted-integration-runtime
 5. If self hosted IR is not needed start with script 03ADF-AzureSQLDBLinkedServerCreate.ps1.  Run this script and validate in ADF the linked services are created.  You view those by clicking on Connections (botton left in authoring area in ADF).  
 6. You'll need to update each of the linked services for each one with credential password and the storage account key.  You can also use Azure Key Vault instead.  After you've updated each linked service, test the connection of each one and save the changes.  
+7. Run 04ADF-DatasetCreate.ps1 and validate there are 3 datasets created in ADF after running. 
+8. Run 05ADF-PipelineCreate.ps1 and validate there are 2 pipelines created in ADF after running. 
