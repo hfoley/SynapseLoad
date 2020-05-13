@@ -1,7 +1,7 @@
 # Synapse Load Solution 
-I had a few customers who were attempting to tackle similar challenges so I decided to help automate the solution we implemented.  We were trying to tackle getting a copy of a large SQL Server database with potentially 1000s of tables into Azure in a PaaS solution for analytics.  Instead of building and maintaining 1000s of pipelines, we built 2 pipelines to handle a couple patterns of loading.  An easily updateable table in an Azure SQL Database houses the data that the pipelines use to run.  
+I had a few customers who were attempting to tackle similar challenges so I decided to help automate the solution we implemented.  We were trying to tackle getting a copy of a large SQL Server database with potentially 1000s of tables into Azure in a PaaS solution for analytics.  Instead of building and maintaining 1000s of pipelines, we built 2 pipelines to handle a couple patterns of loading.  An easily updateable table in an Azure SQL Database houses the data that the pipelines use to run.  We extract data to Azure Data Lake Storage (gen2) in parquet files.  Then data is loaded into a final destination in Azure Synapse.  
 	
-The data in parquet files will then be loaded into a Synapse Analytics solution diagrammed below.  
+The architecture of the solution diagrammed below.  
 
 ![alt text](https://github.com/hfoley/EDU/blob/master/images/SynapseLoadArchitecture.png?raw=true)
 
