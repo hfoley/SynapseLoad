@@ -13,7 +13,7 @@ The architecture of the solution diagrammed below.
 	5. Azure Synapse - destination to load parquet extracted files 
 
 * [CreateResources](https://github.com/hfoley/SynapseLoad/tree/master/CreateResources)   - contains PowerShell scripts to build all the Azure components in the solution. 
-* [AzureSQLScripts](https://github.com/hfoley/SynapseLoad/tree/master/AzureSQLScripts)   - contains SQL Scripts to create and load the Azure SQL metadata table.  Also contains some sample scripts and scripts to monitor the load process.  
+* [AzureSQLScripts](https://github.com/hfoley/SynapseLoad/tree/master/AzureSQLScripts)   - contains SQL Scripts to create and load the Azure SQL metadata table.  Also contains a subdirectory with sample data and related scripts if you'd like to test/view the solution with sample data instead.  
 * [ADFPosh](https://github.com/hfoley/SynapseLoad/tree/master/ADFPosh)  - contains PowerShell scripts to build the ADF coponents and pipelines 
 
 Each sub-directory has additional readme files with further details but the high level steps are below.  
@@ -23,6 +23,8 @@ Each sub-directory has additional readme files with further details but the high
 2. Connect to Azure SQL DB and run scripts 01  - 03 .  These scripts will create ADF.MetadataLoad schema, table, and an insert script to load the table that will drive the pipelines.  More details in AzureSQLScripts readme and in the comments of the scripts to run. 
 3. Connect to Azure Synapse (make sure running) and run scripts to create your target tables (staging and final destination).  If you're using the sample use scripts in sample location.   
 4. Run the scripts for creating the Data Factory components contained in ADFPosh directory.  
+5. Load parquet files into storage location. 
+6. Run and test the pipelines.  
 
 
 		
