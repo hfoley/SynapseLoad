@@ -29,7 +29,8 @@ Each sub-directory has additional readme files with further details but the high
 3. Connect to Azure Synapse (make sure running) and run scripts to create your target tables (staging and final destination).  If you're using the sample use scripts in sample location.   
 4. Run the scripts for creating the Data Factory components contained in ADFPosh directory.  
 5. Load parquet files into storage location. 
-6. Run and test the pipelines.  
+6. Run each pipeline passing it the parameter of the filename to load.  This value should correspond to the value in the ADF.MetadataLoad table's Filename column.  
+
 
 
 		
