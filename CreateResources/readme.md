@@ -14,7 +14,7 @@ Each PowerShell script will contain a variable section at the top.  Below is a l
 
 | Variable        | Explanation |          
 | ------------- |-------------| 
-| $SubscriptionName     | holder | 
-| $SubscriptionId      | holder    |  
-| $resourceGroupName | holder      |
-| $resourceGroupLocation | holder |
+| $SubscriptionName     | Subscription name to create resources | 
+| $SubscriptionId      | Subscription ID |  
+| $resourceGroupName | Resource group name to hold resources |
+| $resourceGroupLocation | Region location for resource group (i.e. East US2) |
