@@ -19,3 +19,10 @@ Each PowerShell script will contain a variable section at the top.  Below is a l
 | $resourceGroupName | Resource group name to hold resources |
 | $resourceGroupLocation | Region location for resource group (i.e. East US2) |
 | $azsqlserver | Logical server name for Azure SQL Database (Your server name can contain only lowercase letters, numbers, and '-', but can't start or end with '-' or have more than 63 characters. And needs to be unique) | 
+| $azsqlDB | Azure SQL DB name | 
+| $edition | Edition of Azure SQL DB to create (i.e "GeneralPurpose") |
+| $ComputeModel | "Serverless" 
+|$ComputeGen | "Gen5"
+|$mincore | ".5"
+|$maxcore | "1"
+|$pausemin | "60"
