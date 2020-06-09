@@ -18,6 +18,11 @@ The architecture of the solution diagrammed below.
 
 Each sub-directory has additional readme files with further details but the high level steps are below.  
 
+## Pre-reqs
+1. Need to have at least PowerShell 5.1 installed.  You can check this by running the following script. 
+	$PSVersionTable.PSVersion
+2. Install Powershell AZ module.  This solution has been tested with 4.1.0.  You can find info on installing this at https://www.powershellgallery.com/packages/Az/4.1.0
+
 ## Steps
 1. Create all assets.  If you'd like to create the Azure components you can use scripts in CreateResources.   Open each file and edit the variables section at the top.  You can do a search/replace for the text string `"***Change This***"`.  Run them individually starting at 01ResourceGroupCreate.ps1 and run them in order by naming. 
 2. Connect to Azure SQL DB and run scripts 01  - 03 .  These scripts will create ADF.MetadataLoad schema, table, and an insert script to load the table that will drive the pipelines.  More details in AzureSQLScripts readme and in the comments of the scripts to run. 
