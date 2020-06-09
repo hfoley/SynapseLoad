@@ -8,7 +8,7 @@ The components in this folder are to create the items in Azure Data Factory (ADF
 3. **03ADF-AzureSQLDBLinkedServerCreate.ps1** - Script to create the linked servers in ADF 
 4. **04ADF-DatasetCreate.ps1** - Script to create the datasets in ADF 
 5. **05ADF-PipelineCreate.ps1** - Scripts to create the pipelines in ADF 
-6. **ADLSGen2LinkedService.json** - Json file tied to the creation of the linked server pointing to ADLS Gen 2 in ADF.  You will need to update the url property to point to the Azure Data Lake Storage.  **Use the data lake storage endpoint** You get to this in the Azure Portal for storage account and choose Properties on left pane.  Copy the url for data lake storage.  It will look like https://<name you mae>.dfs.core.windows.net/.  
+6. **ADLSGen2LinkedService.json** - Json file tied to the creation of the linked server pointing to ADLS Gen 2 in ADF.  You will need to update the url property to point to the Azure Data Lake Storage.  
 7. **AzureSQLDBLinkedService.json** - Json file tied to the creation of the linked server pointing to SQL DB in ADF
 8. **SynapseLinkedService.json** - Json file tied to the creation of the linked server pointing to Synapse in ADF
 9. DatasetSinkSynapse.json - Json file tied to the creation of the sink dataset in ADF pointing to Synapse destination
