@@ -20,7 +20,7 @@ INSERT INTO [ADF].[MetadataLoad]
            ('ParquetStudent'
            ,'hopemadecont'
 		   ,'ADF'
-           ,'ParquetStudent_Stg'
+           ,'Student_Stg'
            ,'Student'
 		   ,'CRMID')
 GO
