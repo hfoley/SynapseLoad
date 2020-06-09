@@ -3,6 +3,7 @@ The scripts in this folder are used to populate and build the components in the 
 	
 
 ## Script List 
+You'll need to connect to the Azure SQL Database created with the tool of your choice to run the scripts.  You'll need to update the firewall p
 1. 01-CreateADFSchema.sql - Script to create an "ADF" schema for the ADF metadata table 
 2. 02-CreateMetadataLoadTable.sql - Script to create the metadata table 
 3. 03-InsertRecordsToMetadataLoad.sql - script to insert records in metadata table 
