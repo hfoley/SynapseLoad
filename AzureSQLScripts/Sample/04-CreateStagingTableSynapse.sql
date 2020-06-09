@@ -12,7 +12,7 @@ END
 GO 
 */
 
-CREATE TABLE [ADF].[ParquetStudent_Stg]
+CREATE TABLE [ADF].[Student_Stg]
 (
 	[CRMID] [int] NOT NULL,
 	[LAST_NAME] [nvarchar](1) NULL,
