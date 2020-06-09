@@ -10,4 +10,6 @@ You'll need to connect to the Azure SQL Database created with the tool of your c
 
 ## Sample data components 
 1. 03-InsertRecordsToMetadataLoadSampleData.sql - updated version of insert script to load the ParquetStudent file 
-2. ParquetStudent - this is a sample parquet file to load from ADLS Gen 2 storage 
+2. 04-CreateStagingTableSynapse.sql - Script to create the staging destination table - run on Azure Synapse sql pool 
+3. 05-CreateTargetTableSynapse.sql - Script to create the final target destination table - run on Azure Synapse sql pool 
+2. ParquetStudent - this is a sample parquet file to load from ADLS Gen 2 storage - load this into the ADLS Storage container created in the solution or will be using with pipelines
