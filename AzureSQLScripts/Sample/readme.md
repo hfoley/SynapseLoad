@@ -1,5 +1,5 @@
 # Synapse Load Solution - Sample data components
-The files in this folder can be used to use a sample dataset with the solution.  
+The files in this folder can be used to run the solution with a sample dataset.  
 
 ## File List 
 1. 03-InsertRecordsToMetadataLoadSampleData.sql - updated version of insert script to load the ParquetStudent file 
