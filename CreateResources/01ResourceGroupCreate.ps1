@@ -1,4 +1,6 @@
-﻿<# Update the variables section appropriately for your environment.  
+﻿<# 
+Hope test
+Update the variables section appropriately for your environment.  
 Update any reference to ***Change This*** in the variables #>
 $startTime = Get-Date
 $SubscriptionName = "***Change This***" 
