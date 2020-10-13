@@ -3,7 +3,7 @@ I had a few customers who were attempting to tackle similar challenges so I deci
 	
 The architecture of the solution diagrammed below.  
 
-![alt text](https://github.com/hfoley/EDU/blob/master/images/SynapseLoadArchitecture.png?raw=true)
+![alt text](https://github.com/hfoley/EDU/blob/master/images/Hope%20Synapse%20Load%20GA%20version.jpg?raw=true)
 
 ## Asset List 
 	1. Azure Resource Group
